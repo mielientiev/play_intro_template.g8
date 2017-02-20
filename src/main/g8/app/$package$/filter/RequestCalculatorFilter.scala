@@ -17,7 +17,7 @@ class RequestCalculatorFilter @Inject()(implicit val mat: Materializer) extends 
   override def apply(f: (RequestHeader) => Future[Result])(rh: RequestHeader): Future[Result] = {
     val value = counter.incrementAndGet()
     f(rh).map { result =>
-      Logger.info(s"Request #$value")
+      Logger.info("Request #" + value)
       result
     }
   }
