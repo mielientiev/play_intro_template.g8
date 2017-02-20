@@ -2,7 +2,7 @@ package $package$.controller
 
 import javax.inject.{Inject, Singleton}
 
-import com.mielientiev.service.CalculatorService
+import $package$.service.CalculatorService
 import play.api.mvc.{Action, Controller}
 import play.api.libs.json.Json
 import play.api.libs.concurrent.Execution.Implicits._
