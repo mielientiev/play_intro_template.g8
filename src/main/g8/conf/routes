@@ -3,4 +3,4 @@
 
 GET        /                                       $package$.controller.HelloWorldController.hello(name = "World")
 GET        /:name                                  $package$.controller.HelloWorldController.hello(name)
-GET        /calculate/$a<[0-9]+>/$b<[0-9]+>        $package$.controller.HelloWorldController.calculateTwoValues(a: Long, b: Long)
+GET        /calculate/:a/:b        $package$.controller.HelloWorldController.calculateTwoValues(a: Long, b: Long)
