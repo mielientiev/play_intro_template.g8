@@ -12,7 +12,7 @@ import play.api.libs.concurrent.Execution.Implicits._
 class HelloWorldController @Inject()(calculatorService: CalculatorService) extends Controller {
 
   def hello(name: String) = Action {
-    Ok(Json.obj("greeting" -> s"Hello, $name"))
+    Ok(Json.obj("greeting" -> ("Hello, "+name)))
   }
 
   def calculateTwoValues(a: Long, b: Long) = Action.async {
