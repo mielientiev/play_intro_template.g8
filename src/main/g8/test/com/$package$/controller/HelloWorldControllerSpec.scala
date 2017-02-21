@@ -1,6 +1,6 @@
-package com.mielientiev.controller
+package $package$.controller
 
-import com.mielientiev.service.InMemoryCalculatorService
+import $package$.service.InMemoryCalculatorService
 import org.scalatestplus.play.PlaySpec
 import play.api.libs.json.Json
 import play.api.mvc._
